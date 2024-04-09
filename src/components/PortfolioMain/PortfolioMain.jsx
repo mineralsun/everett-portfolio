@@ -19,13 +19,17 @@ function PortfolioMain() {
             <div className="container">
                 {projects.map(project => {
                     return (
-                        <div key={project.id}>
+                        <div className="projectGrid" key={project.id}>
+                            <div className="projectContainer">
                             <img className="projecThumbnailContainer" src={project.thumbnail} />
                             <h2>{project.project_name}</h2>
+                            <br />
                             <p>{project.project_description}</p>
+                            <br />
                             <a href={project.live_demo} target="_blank" rel="noopener noreferrer">Live Demo</a>
                             <br />
                             <a href={project.source_code} target="_blank" rel="noopener noreferrer">Source Code</a>
+                            </div>
                         </div>
                     )
                 })}
