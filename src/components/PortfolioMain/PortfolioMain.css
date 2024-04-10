@@ -1,10 +1,36 @@
-/* .mainPage {
-    display:grid;
-    border-top: 1px solid;
-} */
+.welcomePage {
+    display: contents;
+    text-align: center;
+    border-bottom: 1px, solid;
+}
 
-.mainContainer { 
-    
+.aboutMeContainer {
+    display: grid;
+    background-color: #595e76;
+    margin: 0 auto;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    /* padding-bottom: 50px; */
+    padding: 50px;
+    gap: 100px;
+}
+
+.aboutMe {
+    color: whitesmoke;
+    padding: 1em;
+}
+
+.techStack {
+    display: flex;
+    margin-top: 10px;
+    /* padding: 1em; */
+    justify-content: space-evenly;
+    background-color: #1f2148;
+}
+
+.mainContainer {
+
     border-bottom: 1px, solid;
     text-align: center;
     overflow: auto;
