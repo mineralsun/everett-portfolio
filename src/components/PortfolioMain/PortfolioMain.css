@@ -1,3 +1,16 @@
+/* .mainPage {
+    display:grid;
+    border-top: 1px solid;
+} */
+
+.mainContainer { 
+    
+    border-bottom: 1px, solid;
+    text-align: center;
+    overflow: auto;
+    color: whitesmoke;
+}
+
 .projectGrid {
     width: 1600px;
     margin: 0 auto;
@@ -5,20 +18,17 @@
     grid-template-columns: repeat(auto-fit, 320px);
     gap: 20px;
     justify-content: center;
+    padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
+    color: whitesmoke;
+    /* background-color:  	#1f2148; */
 }
 
 .projectContainer {
-    background-color: #009230 !important;
+    background-color: #737373 !important;
     border: 5px color black;
     box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
-}
-
-#descriptionStyle {
-    display: flex;
-    padding: 1em;
-    /* justify-content: space-around; */
 }
 
 .projectInfo {
