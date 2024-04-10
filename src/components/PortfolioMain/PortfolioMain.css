@@ -11,14 +11,24 @@
 
 .projectContainer {
     background-color: #009230 !important;
-    border: 3px solid var(--borderColor);
-    -webkit-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+    border: 5px color black;
     box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+}
+
+#descriptionStyle {
+    display: flex;
+    padding: 1em;
+    /* justify-content: space-around; */
+}
+
+.projectInfo {
+    justify-content: space-around;
+    padding: 5px;
 }
 
 .sourceAndDemo {
     display: flex;
     justify-content: space-between;
+    padding-top: 4em;
     padding: 1em;
 }
