@@ -20,7 +20,7 @@ function PortfolioMain() {
                 {projects.map(project => {
                     return (
                                 <div className="projectContainer" key={project.id}>
-                                    <img className="projecThumbnailContainer" src={project.thumbnail} />
+                                    <img className="projecThumbnailContainer" src={project.thumbnail} width={320} height={180}/>
                                     <h2>{project.project_name}</h2>
                                     <p>{project.project_description}</p>
                                     <a href={project.live_demo} target="_blank" rel="noopener noreferrer">Live Demo</a>
