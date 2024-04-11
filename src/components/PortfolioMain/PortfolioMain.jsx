@@ -50,8 +50,7 @@ function PortfolioMain() {
                     </div>
                 </div>
                 <div className="socialLinks">
-                    {/* <iframe allowDangerousHTML={true} style="border-radius:12px" src="https://open.spotify.com/embed/artist/2AXbdNehSVzZjCgrBUdNtN?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> */}
-
+                    <iframe src="https://open.spotify.com/embed/artist/2AXbdNehSVzZjCgrBUdNtN?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0"></iframe>
                     <h2> Connect with me on LinkedIn & Github!</h2>
                     <h4>LinkedIn: <span />
                         <a target="_blank" href="https://www.linkedin.com/in/everett-james-butler/">Everett Butler</a>
