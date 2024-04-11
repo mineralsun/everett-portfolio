@@ -29,6 +29,13 @@
     background-color: #1f2148;
 }
 
+.socialLinks {
+    display: grid;
+    align-content: center;
+    text-align: center;
+    color: whitesmoke;
+}
+
 .mainContainer {
 
     border-bottom: 1px, solid;

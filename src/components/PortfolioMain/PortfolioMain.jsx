@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Spotify } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import './PortfolioMain.css';
@@ -29,22 +29,33 @@ function PortfolioMain() {
                     <a target="_blank" href="public/files/Everett Butler Master Resume 2024.pdf">My Resume</a>
                     <div className="techStack">
                         <ul>
-                        <li>HTML/CSS</li>
-                        <li>JavaScript</li>
-                        <li>SQL</li>
-                        <li>C#</li>
-                        <li>.NET</li>
-                        <li>Python</li>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>SQL</li>
+                            <li>C#</li>
+                            <li>.NET</li>
+                            <li>Python</li>
                         </ul>
                         <ul>
-                        <li>React/Redux</li>
-                        <li>Node</li>
-                        <li>Express</li>
-                        <li>PostgreSQL</li>
-                        <li>AWS/S3 Bucket</li>
-                        <li>Postman</li>
+                            <li>React/Redux</li>
+                            <li>Node</li>
+                            <li>Express</li>
+                            <li>PostgreSQL</li>
+                            <li>AWS/S3 Bucket</li>
+                            <li>Postman</li>
                         </ul>
                     </div>
+                </div>
+                <div className="socialLinks">
+                    {/* <iframe allowDangerousHTML={true} style="border-radius:12px" src="https://open.spotify.com/embed/artist/2AXbdNehSVzZjCgrBUdNtN?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> */}
+
+                    <h2> Connect with me on LinkedIn & Github!</h2>
+                    <h4>LinkedIn: <span />
+                        <a target="_blank" href="https://www.linkedin.com/in/everett-james-butler/">Everett Butler</a>
+                        <br />
+                        Github: <span />
+                        <a target="_blank" href="https://github.com/mineralsun">MineralSun</a>
+                    </h4>
                 </div>
             </section>
             <div className="mainContainer">

@@ -1,9 +1,8 @@
 .nav {
   /* flex box layout */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-
   margin: 0 0 30px;
   background-color: #0b362c;
   overflow: hidden;
@@ -20,6 +19,8 @@
   color: #f2f2f2;
   padding-left: 10px;
   margin: 0;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .navLink {
