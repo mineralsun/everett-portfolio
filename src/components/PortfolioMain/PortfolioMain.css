@@ -1,7 +1,21 @@
 .welcomePage {
-    display: contents;
+    display: grid;
     text-align: center;
     border-bottom: 1px, solid;
+    background-color: #1f2148;
+    color: whitesmoke;
+    height: 100%;
+    position: relative; bottom: 30px;
+}
+
+.headshotContainer {
+    display: grid;
+    padding: 50px;
+}
+
+#headshotStylings {
+    border: 5px solid #595e76;
+    box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
 }
 
 .aboutMeContainer {
@@ -14,6 +28,8 @@
     /* padding-bottom: 50px; */
     padding: 50px;
     gap: 100px;
+    position: relative; bottom: 30px;
+    
 }
 
 .aboutMe {
@@ -51,11 +67,10 @@
     grid-template-columns: repeat(auto-fit, 320px);
     gap: 20px;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     text-align: center;
     color: whitesmoke;
-    /* background-color:  	#1f2148; */
+
 }
 
 .projectContainer {

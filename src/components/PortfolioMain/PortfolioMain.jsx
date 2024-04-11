@@ -16,6 +16,9 @@ function PortfolioMain() {
         <main>
             <section className="welcomePage">
                 <h1>Welcome to your new developer's portfolio!</h1>
+                <div className="headshotContainer">
+                <img id="headshotStylings" src="public/images/everettpfp.jpeg" height={400} width={400} />
+                </div>
             </section>
             <section className="aboutMeContainer">
                 <div className="aboutMe">
