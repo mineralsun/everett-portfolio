@@ -39,6 +39,7 @@
 #jokeToDisplay {
     grid-area: right;
     text-align: center;
+    font-size: 24px;
 }
 
 .left-column {
