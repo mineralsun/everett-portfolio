@@ -1,3 +1,13 @@
+.welcomePageContainer {
+    display: grid;
+    height: 100%;
+    position: relative; bottom: 30px;
+    background-color: #1f2148;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
 .welcomePage {
     display: grid;
     text-align: center;
@@ -6,10 +16,34 @@
     color: whitesmoke;
     height: 100%;
     position: relative; bottom: 30px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left-column right-column";
+    padding: 10px;
 }
 
-.headshotContainer {
+
+#greetingMessage {
+    font-size: 36px;
+}
+
+.right-column {
     display: grid;
+    grid-area: right-column;
+    margin: 0 auto;
+    padding-left: 50px;
+    max-width: 300px;
+
+}
+
+#jokeToDisplay {
+    grid-area: right;
+    text-align: center;
+}
+
+.left-column {
+    display: grid;
+    grid-area: left-column;
     padding: 50px;
 }
 

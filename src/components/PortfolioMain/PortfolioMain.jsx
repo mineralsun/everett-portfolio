@@ -10,14 +10,31 @@ function PortfolioMain() {
 
     useEffect(() => {
         dispatch({ type: 'FETCH_PROJECTS' });
+        newJoke();
     }, []);
+
+    let jokeArray = ['Things arent always #000000 and #FFFFFF.', `What's the difference between a professional guitarist and a large pizza? The pizza can feed a family of four.`, `Just had a guy threaten to attack me with the neck of a guitar. I asked him, “Is that a fret?”`, 'What did Batman bring to the party? Just Ice!', `Why do Java Programmers wear glasses? Because they don't see sharp!`]
+
+    const newJoke = () => {
+        var randomNumber = Math.floor(Math.random() * (4));
+
+        document.getElementById("jokeToDisplay").innerHTML = jokeArray[randomNumber]
+    }
+
+
 
     return (
         <main>
-            <section className="welcomePage">
-                <h1>Welcome to your new developer's portfolio!</h1>
-                <div className="headshotContainer">
-                <img id="headshotStylings" src="public/images/everettpfp.jpeg" height={400} width={400} />
+            <section className="welcomePageContainer">
+                <h1 id="greetingMessage">Meet Your New Developer!</h1>
+                <div className="welcomePage">
+                    <div className="left-column">
+                        <img id="headshotStylings" src="public/images/everettpfp.jpeg" height={400} width={400} />
+                        {/* <iframe id="headshotStylings" src="public/images/everettpfp.jpeg" height={400} width={400}></iframe> */}
+                    </div>
+                    <div className="right-column">
+                            <div id="jokeToDisplay"></div>
+                        </div>
                 </div>
             </section>
             <section className="aboutMeContainer">
