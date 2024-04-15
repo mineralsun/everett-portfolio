@@ -13,7 +13,7 @@ function PortfolioMain() {
         newJoke();
     }, []);
 
-    let jokeArray = ['Things arent always #000000 and #FFFFFF.', `What's the difference between a professional guitarist and a large pizza? The pizza can feed a family of four.`, `Just had a guy threaten to attack me with the neck of a guitar. I asked him, “Is that a fret?”`, 'What did Batman bring to the party? Just Ice!', `Why do Java Programmers wear glasses? Because they don't see sharp!`,`A guy walks into a bar and asks for 1.4 root beers. The bartender says "I'll have to charge you extra, that's a root beer float". The guy says "In that case, better make it a double."`,`Why did the programmer quit their job? Because they didn't get arrays!`,]
+    let jokeArray = ['Things arent always #000000 and #FFFFFF.', `What's the difference between a professional guitarist and a large pizza? The pizza can feed a family of four.`, `Just had a guy threaten to attack me with the neck of a guitar. I asked him, “Is that a fret?”`, 'What did Batman bring to the party? Just Ice!', `Why do Java Programmers wear glasses? Because they don't see sharp!`, `A guy walks into a bar and asks for 1.4 root beers. The bartender says "I'll have to charge you extra, that's a root beer float". The guy says "In that case, better make it a double."`, `Why did the programmer quit their job? Because they didn't get arrays!`,]
 
     const newJoke = () => {
         var randomNumber = Math.floor(Math.random() * (6));
@@ -21,25 +21,36 @@ function PortfolioMain() {
         document.getElementById("jokeToDisplay").innerHTML = jokeArray[randomNumber]
     }
 
+    const liveDemoText = (project) => {
+        if (project.live_demo === 'No Demo Available') {
+            return ('No Demo Available')
+        } else {
+            return ('Live Demo')
+        }
+    }
 
 
     return (
         <main>
             <section className="welcomePageContainer">
-            {/* <h1 id="greetingMessage">Meet Your New Developer!</h1> */}
+                {/* <h1 id="greetingMessage">Meet Your New Developer!</h1> */}
                 <div className="welcomePage">
                     <div className="left-column">
                         <img id="headshotStylings" src="public/images/everettpfp.jpeg" height={400} width={400} />
                         {/* <iframe id="headshotStylings" src="public/images/everettpfp.jpeg" height={400} width={400}></iframe> */}
                     </div>
                     <div className="right-column">
-                            <div id="jokeToDisplay"></div>
-                        </div>
+                        <div id="jokeToDisplay"></div>
+                    </div>
+                    <br />
+                    <div className="jokeButtonContainer">
+                        <button id="jokeButton" onClick={newJoke}>New Joke</button>
+                    </div>
                 </div>
             </section>
             <section className="aboutMeContainer">
                 <div className="aboutMe">
-                    <h2>About Me</h2>
+                    <h2 id='greetingMessage'>Meet Your New Developer!</h2>
                     <p>I am currently <b>available for hire!</b></p>
                     <p>Apart from work, I am a<i>passionate musician</i>, I produce my own music, play guitar, and support local musicians wherever I am!</p>
                     <p>I love <i>collaborating</i> with other driven and artistic people who want to do work that <i>matters</i> and makes a difference in this world!</p>
@@ -89,7 +100,7 @@ function PortfolioMain() {
                                 <h2>{project.project_name}</h2>
                                 <p id="descriptionStyle">{project.project_description}</p>
                                 <div className="sourceAndDemo">
-                                    <a href={project.live_demo} target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                    <a href={project.live_demo} target="_blank" rel="noopener noreferrer">{liveDemoText(project)}</a>
                                     <br />
                                     <a href={project.source_code} target="_blank" rel="noopener noreferrer">Source Code</a>
                                 </div>
