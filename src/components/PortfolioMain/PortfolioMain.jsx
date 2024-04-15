@@ -13,10 +13,10 @@ function PortfolioMain() {
         newJoke();
     }, []);
 
-    let jokeArray = ['Things arent always #000000 and #FFFFFF.', `What's the difference between a professional guitarist and a large pizza? The pizza can feed a family of four.`, `Just had a guy threaten to attack me with the neck of a guitar. I asked him, “Is that a fret?”`, 'What did Batman bring to the party? Just Ice!', `Why do Java Programmers wear glasses? Because they don't see sharp!`]
+    let jokeArray = ['Things arent always #000000 and #FFFFFF.', `What's the difference between a professional guitarist and a large pizza? The pizza can feed a family of four.`, `Just had a guy threaten to attack me with the neck of a guitar. I asked him, “Is that a fret?”`, 'What did Batman bring to the party? Just Ice!', `Why do Java Programmers wear glasses? Because they don't see sharp!`,`A guy walks into a bar and asks for 1.4 root beers. The bartender says "I'll have to charge you extra, that's a root beer float". The guy says "In that case, better make it a double."`,`Why did the programmer quit their job? Because they didn't get arrays!`,]
 
     const newJoke = () => {
-        var randomNumber = Math.floor(Math.random() * (4));
+        var randomNumber = Math.floor(Math.random() * (6));
 
         document.getElementById("jokeToDisplay").innerHTML = jokeArray[randomNumber]
     }
@@ -26,7 +26,7 @@ function PortfolioMain() {
     return (
         <main>
             <section className="welcomePageContainer">
-                <h1 id="greetingMessage">Meet Your New Developer!</h1>
+            {/* <h1 id="greetingMessage">Meet Your New Developer!</h1> */}
                 <div className="welcomePage">
                     <div className="left-column">
                         <img id="headshotStylings" src="public/images/everettpfp.jpeg" height={400} width={400} />
