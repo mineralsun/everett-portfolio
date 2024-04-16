@@ -12,6 +12,6 @@ export default defineConfig(() => {
             }
         },
         plugins: [react()],
-        base: "https://github.com/mineralsun/mineralsun.github.io",
+        base: "https://mineralsun.github.io/",
     };
 });
