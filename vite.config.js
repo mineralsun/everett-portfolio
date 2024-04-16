@@ -11,6 +11,7 @@ export default defineConfig(() => {
                 "/api":'http://localhost:5579',
             }
         },
+        base: "https://github.com/mineralsun/mineralsun.github.io",
         plugins: [react()],
     };
 });
