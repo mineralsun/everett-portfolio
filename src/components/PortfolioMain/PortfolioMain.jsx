@@ -87,47 +87,48 @@ function PortfolioMain() {
                     </h4>
                 </div>
             </section>
-            <section className="projectGrid">
-            <div className="mainContainer">
-                <h2>My Past Projects!</h2>
-            </div>
-                        <div className="projectContainer">
-                            <img src="/images/OCD-Diva-Screenshot.png" width={320} height={180} />
-                            <div className="projectInfo">
-                                <h2>OCD-Diva</h2>
-                                <p id="descriptionStyle">A conditional survey used for estimating a home cleaning service, combined with a CRM for employees</p>
-                                <div className="sourceAndDemo">
-                                    <a href="https://www.linkedin.com/posts/everett-james-butler_hello-everyone-i-recently-had-the-opportunity-activity-7087208810108366848--nIn?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                                    <br />
-                                    <a href="https://github.com/mineralsun/OCDDiva-project" target="_blank" rel="noopener noreferrer">Source Code</a>
-                                </div>
+            <section>
+                <div className="mainContainer">
+                    <h2>My Past Projects!</h2>
+                </div>
+                <div className="projectGrid">
+                    <div className="projectContainer">
+                        <img src="/images/OCD-Diva-Screenshot.png" width={320} height={180} />
+                        <div className="projectInfo">
+                            <h2>OCD-Diva</h2>
+                            <p id="descriptionStyle">A conditional survey used for estimating a home cleaning service, combined with a CRM for employees</p>
+                            <div className="sourceAndDemo">
+                                <a href="https://www.linkedin.com/posts/everett-james-butler_hello-everyone-i-recently-had-the-opportunity-activity-7087208810108366848--nIn?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <br />
+                                <a href="https://github.com/mineralsun/OCDDiva-project" target="_blank" rel="noopener noreferrer">Source Code</a>
                             </div>
                         </div>
-                        <div className="projectContainer">
-                            <img src="/images/your cannaBuddy Stash pic.png" width={320} height={180} />
-                            <div className="projectInfo">
-                                <h2>YourCannaBuddy</h2>
-                                <p id="descriptionStyle">An all-in-one cannabis tracking app where users can add, edit, and delete different cannabis products to keep track of what products they have used and favorite them!</p>
-                                <div className="sourceAndDemo">
-                                    <a href="https://www.linkedin.com/posts/everett-james-butler_a-couple-weeks-ago-i-had-the-opportunity-activity-7077778170183094274-L8ka?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                                    <br />
-                                    <a href="https://github.com/mineralsun/YourCannabuddy" target="_blank" rel="noopener noreferrer">Source Code</a>
-                                </div>
+                    </div>
+                    <div className="projectContainer">
+                        <img src="/images/your cannaBuddy Stash pic.png" width={320} height={180} />
+                        <div className="projectInfo">
+                            <h2>YourCannaBuddy</h2>
+                            <p id="descriptionStyle">An all-in-one cannabis tracking app where users can add, edit, and delete different cannabis products to keep track of what products they have used and favorite them!</p>
+                            <div className="sourceAndDemo">
+                                <a href="https://www.linkedin.com/posts/everett-james-butler_a-couple-weeks-ago-i-had-the-opportunity-activity-7077778170183094274-L8ka?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <br />
+                                <a href="https://github.com/mineralsun/YourCannabuddy" target="_blank" rel="noopener noreferrer">Source Code</a>
                             </div>
                         </div>
-                        <div className="projectContainer">
-                            <img src="/images/Movie-saga.png" width={320} height={180} />
-                            <div className="projectInfo">
-                                <h2>Movie Saga</h2>
-                                <p id="descriptionStyle">A movie slide-deck where users can add movies they have seen, upload information about the movie, and view those movies</p>
-                                <div className="sourceAndDemo">
-                                    <a href="" target="_blank" rel="noopener noreferrer">No Demo Available</a>
-                                    <br />
-                                    <a href="https://github.com/mineralsun/Everett-Movie-Sagas" target="_blank" rel="noopener noreferrer">Source Code</a>
-                                </div>
+                    </div>
+                    <div className="projectContainer">
+                        <img src="/images/Movie-saga.png" width={320} height={180} />
+                        <div className="projectInfo">
+                            <h2>Movie Saga</h2>
+                            <p id="descriptionStyle">A movie slide-deck where users can add movies they have seen, upload information about the movie, and view those movies</p>
+                            <div className="sourceAndDemo">
+                                <a href="" target="_blank" rel="noopener noreferrer">No Demo Available</a>
+                                <br />
+                                <a href="https://github.com/mineralsun/Everett-Movie-Sagas" target="_blank" rel="noopener noreferrer">Source Code</a>
                             </div>
                         </div>
-                {/* {projects.map(project => {
+                    </div>
+                    {/* {projects.map(project => {
                     return (
                         <div className="projectContainer" key={project.id}>
                             <img src={project.thumbnail} width={320} height={180} />
@@ -143,7 +144,7 @@ function PortfolioMain() {
                         </div>
                     )
                 })} */}
-                
+                </div>
             </section>
         </main>
     );
