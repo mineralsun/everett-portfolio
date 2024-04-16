@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/mineralsun/mineralsun.github.io",
   "name": "everett-portfolio",
   "version": "1.0.0",
   "private": true,
@@ -26,6 +27,8 @@
     "start": "node server/server.js",
     "client": "vite",
     "server": "nodemon --watch server server/server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "test": "vitest"
   },
