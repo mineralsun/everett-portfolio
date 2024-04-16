@@ -52,7 +52,7 @@ function PortfolioMain() {
                     <h2 id='greetingMessage'>Meet Your New Developer!</h2>
                     <p>I am currently <b>available for hire!</b></p>
                     <p>Apart from work, I am a <i>passionate musician</i>, I produce my own music, play guitar, and support local musicians wherever I am!</p>
-                    <p>I love <i>collaborating</i> with other driven and artistic people who want to do work that <i>matters</i> and makes a difference in this world!</p>
+                    <p>I love <i>collaborating</i> with other artistic and driven people who want to do work that <i>matters</i> and makes a difference in this world!</p>
                     <hr />
                     <h2>My Focus</h2>
                     <p>A full-stack engineer with a preference in back-end development!</p>
