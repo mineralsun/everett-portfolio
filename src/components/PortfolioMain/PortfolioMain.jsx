@@ -9,7 +9,7 @@ function PortfolioMain() {
     const projects = useSelector(store => store.projectList);
 
     useEffect(() => {
-        dispatch({ type: 'FETCH_PROJECTS' });
+        // dispatch({ type: 'FETCH_PROJECTS' });
         newJoke();
     }, []);
 
@@ -56,7 +56,7 @@ function PortfolioMain() {
                     <hr />
                     <h2>My Focus</h2>
                     <p>A full-stack engineer with a preference in back-end development!</p>
-                    <a target="_blank" href="public/files/Everett Butler Master Resume 2024.pdf">My Resume</a>
+                    <a target="_blank" href="/files/Everett Butler Master Resume 2024.pdf">My Resume</a>
                     <div className="techStack">
                         <ul>
                             <li>HTML/CSS</li>
