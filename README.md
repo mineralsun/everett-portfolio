@@ -1,4 +1,9 @@
-# Prime Solo Project - Starting Repo
+# EVERETT'S PORTFOLIO
+
+Not a whole lot of setup in this readme as I don't expect other users to be messing with this application!
+If you desire to poke around, please unminimize the "Prime Solo Project -- Starting Repo" line, as I used my school's solo project as a starting point! Otherwise, enjoy!!
+
+<!-- # Prime Solo Project - Starting Repo -->
 
 This version uses React, Redux, Express, Passport, and PostgreSQL (a full list of dependencies can be found in `package.json`).
 
@@ -94,30 +99,6 @@ Directory Structure:
 - `public/` contains static assets for the client-side.
 - `build/` after you build the project, contains the transpiled code from `src/` and `public/` that will be viewed on the production site.
 - `server/` contains the Express App.
-
-This code is also heavily commented. We recommend reading through the comments, getting a lay of the land, and becoming comfortable with how the code works before you start making too many changes. If you're wondering where to start, consider reading through component file comments in the following order:
-
-- src/components
-  - App/App
-  - Footer/Footer
-  - Nav/Nav
-  - AboutPage/AboutPage
-  - InfoPage/InfoPage
-  - UserPage/UserPage
-  - LoginPage/LoginPage
-  - RegisterPage/RegisterPage
-  - LogOutButton/LogOutButton
-  - ProtectedRoute/ProtectedRoute
-
-## Deployment
-
-1. Create a new Heroku project.
-1. Link the Heroku project to the project GitHub Repo.
-1. Create an Heroku Postgres database.
-1. Connect to the Heroku Postgres database from Postico.
-1. Create the necessary tables.
-1. Add an environment variable for `SERVER_SESSION_SECRET` with a nice random string for security.
-1. In the deploy section, select manual deploy.
 
 ## Update Documentation
 
