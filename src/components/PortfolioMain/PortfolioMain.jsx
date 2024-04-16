@@ -91,7 +91,6 @@ function PortfolioMain() {
             <div className="mainContainer">
                 <h2>My Past Projects!</h2>
             </div>
-                    return (
                         <div className="projectContainer">
                             <img src="/images/OCD-Diva-Screenshot.png" width={320} height={180} />
                             <div className="projectInfo">
@@ -128,7 +127,6 @@ function PortfolioMain() {
                                 </div>
                             </div>
                         </div>
-                    )
                 {/* {projects.map(project => {
                     return (
                         <div className="projectContainer" key={project.id}>
