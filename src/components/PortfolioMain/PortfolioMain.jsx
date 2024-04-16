@@ -36,7 +36,7 @@ function PortfolioMain() {
                 {/* <h1 id="greetingMessage">Meet Your New Developer!</h1> */}
                 <div className="welcomePage">
                     <div className="left-column">
-                        <img id="headshotStylings" href="public/images/everettpfp.jpeg" src="public/images/everettpfp.jpeg" height={400} width={400} />
+                        <img id="headshotStylings" href="public/images/everettpfp.jpeg" src="/images/everettpfp.jpeg" height={400} width={400} />
                         {/* <iframe id="headshotStylings" src="public/images/everettpfp.jpeg" height={400} width={400}></iframe> */}
                     </div>
                     <div className="right-column">
