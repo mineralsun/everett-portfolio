@@ -87,7 +87,7 @@ function PortfolioMain() {
                     </h4>
                 </div>
             </section>
-            <section>
+            <section className="projectGrid">
             <div className="mainContainer">
                 <h2>My Past Projects!</h2>
             </div>
