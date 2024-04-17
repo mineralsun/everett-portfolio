@@ -2,6 +2,7 @@ import React, { useState, useEffect, Spotify } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import './PortfolioMain.css';
+import '../App/App.css';
 
 function PortfolioMain() {
     const dispatch = useDispatch();
@@ -87,7 +88,7 @@ function PortfolioMain() {
                     </h4>
                 </div>
             </section>
-            <section>
+            <section className="pastProjects">
                 <div className="mainContainer">
                     <h2>My Past Projects!</h2>
                 </div>
